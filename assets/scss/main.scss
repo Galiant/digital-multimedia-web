@@ -25,12 +25,6 @@ body {
 
 /* Header */
 
-.jumbotron {
-  background: url(../img/header.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-}
-
 .bg-light {
   background-color: $dark-green !important;
   opacity: 0.85;
@@ -43,6 +37,19 @@ body {
     padding-right: .7rem;
     padding-left: .7rem;
   }
+}
+
+.my-header {
+  background: url(../img/header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+/* Video */
+
+.video {
+  margin: 2rem 0;
 }
 
 /* Footer */
