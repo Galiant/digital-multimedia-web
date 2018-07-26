@@ -16,47 +16,36 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(#fff, .1);
+  background-color: rgba(#fff, 0.1);
 }
 
 .container {
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
+/* Header */
 
-.site-header {
-  background-color: $dark-green;
-  opacity: .85;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  a {
-    color: $black;
-    transition: ease-in-out color .15s;
-  }
+.jumbotron {
+  background: url(../img/header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
-.site-header a:hover {
-  color: white;
-  text-decoration: none;
+.bg-light {
+  background-color: $dark-green !important;
+  opacity: 0.85;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 
 @media (min-width: 768px) {
-  .flex-md-equal>* {
-    -ms-flex: 1;
-    flex: 1;
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .7rem;
+    padding-left: .7rem;
   }
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
-/*
- * Footer
- */
+/* Footer */
 
 .blog-footer {
   margin-top: 50px;
