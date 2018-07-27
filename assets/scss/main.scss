@@ -127,7 +127,6 @@ form {
   padding: 2.5rem 0;
   color: white;
   text-align: center;
-  background-color: $dark-green;
   a {
     color: $black;
     &:hover {
@@ -135,8 +134,11 @@ form {
       text-decoration: none;
     }
   }
+  p {
+    font-weight: 600;
+  }
 }
 
-.blog-footer p:last-child {
+ul {
   margin-bottom: 0;
 }
