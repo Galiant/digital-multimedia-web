@@ -52,6 +52,11 @@ body {
 
 .video {
   margin: 2rem 0;
+  max-width: 960px;
+  max-height: 600px;
+  border: 10px solid white;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .play-video {
@@ -128,7 +133,7 @@ form {
   color: white;
   text-align: center;
   a {
-    color: $black;
+    color: white;
     &:hover {
       color: $light-brown;
       text-decoration: none;
@@ -137,8 +142,40 @@ form {
   p {
     font-weight: 600;
   }
+  ul {
+    margin-bottom: 0;
+  }
 }
 
-ul {
-  margin-bottom: 0;
+/* Play */
+
+.play-footer {
+  background: url(../img/Dirt.png);
+  padding: 1rem 1rem;
+  padding-bottom: 6rem;
+  a {
+    color: white;
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Privacy Policy */
+
+.privacy-jumbotron {
+  background-color: white;
+  color: black;
+  .privacy {
+    padding-top: 3rem;
+  }
+  p {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .date {
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+  }
 }
