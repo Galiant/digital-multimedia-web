@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="assets/css/main.min.css" rel="stylesheet">
@@ -77,13 +79,19 @@
     <div class="container" id="gallery">
         <div class="row">
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image1.jpg" alt="Game screenshot 1" class="img-thumbnail img-fluid">
+                <a href="assets/img/image1_big.jpg" class="example-image-link" data-lightbox="example-set" data-title="Game screenshot 1">
+                    <img src="assets/img/image1.jpg" alt="Game screenshot 1" class="img-thumbnail img-fluid example-image">
+                </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image2.jpg" alt="Game screenshot 2" class="img-thumbnail img-fluid">
+                <a href="assets/img/image2_big.jpg" class="example-image-link" data-lightbox="example-set" data-title="Game screenshot 2">
+                    <img src="assets/img/image2.jpg" alt="Game screenshot 2" class="img-thumbnail img-fluid example-image">
+                </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image3.jpg" alt="Game screenshot 3" class="img-thumbnail img-fluid">
+                <a href="assets/img/image3_big.jpg" class="example-image-link" data-lightbox="example-set" data-title="Game screenshot 3">
+                    <img src="assets/img/image3.jpg" alt="Game screenshot 3" class="img-thumbnail img-fluid example-image">
+                </a>
             </div>
         </div>
     </div>
@@ -166,6 +174,7 @@
         window.jQuery || document.write('<script src="assets/js/vendors/jquery-slim.min.js"><\/script>')
     </script>
     <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
