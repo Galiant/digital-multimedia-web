@@ -34,13 +34,13 @@
                     <a class="nav-link" href="play.html">Play</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#my-contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -58,31 +58,87 @@
         <iframe class="video" src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2FglBsbXByHpWMZ16krzlu6vsGtSI3%2Fcontent%2Fe22121ed-115d-38be-260f-e83aece42517&imagePath=screens/7.png" style="width:960px;height:600px;border:10px solid white;"></iframe>
     </div>
 
+    <div class="grass-mid" id="about"></div>
     <div class="jumbotron jumbotron-fluid about">
         <div class="col-lg-6 mx-auto">
-            <h3 class="display-4 font-weight-normal">About</h3>
             <p class="lead font-weight-normal">The Adventures Of Poppy The Cat is adventure 2D platform game for online, android and ios. If you enjoy platform games you shouldn’t miss this. Easy to pick up and play thanks to simple controls. Journey through beautifully designed levels, try to find all coins and defeat dangerous enemy or avoid trap.</p>
         </div>
+
         <div class="col align-self-center">
             <a href="#">
-                <img src="assets/img/googleplay.png" alt="Google Play">
+                <img src="assets/img/googleplay.png" alt="Google Play" class="img-fluid">
             </a>
             <a href="#">
-                <img src="assets/img/appstore.png" alt="Google Play">
+                <img src="assets/img/appstore.png" alt="Google Play" class="img-fluid">
             </a>
         </div>
     </div>
 
-    <div class="container game-images">
+    <div class="container" id="gallery">
         <div class="row">
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image1.jpg" alt="" class="img-thumbnail">
+                <img src="assets/img/image1.jpg" alt="Game screenshot 1" class="img-thumbnail img-fluid">
             </div>
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image2.jpg" alt="" class="img-thumbnail">
+                <img src="assets/img/image2.jpg" alt="Game screenshot 2" class="img-thumbnail img-fluid">
             </div>
             <div class="col-lg-4 col-sm-6">
-                <img src="assets/img/image3.jpg" alt="" class="img-thumbnail">
+                <img src="assets/img/image3.jpg" alt="Game screenshot 3" class="img-thumbnail img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="grass-mid" id="my-contact"></div>
+    <div class="jumbotron jumbotron-fluid my-contact">
+        <div class="col-lg-6 mx-auto">
+            <div id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-self-center text-center">
+                            <h3>Contact us</h3>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/mail_goes_here" method="POST">
+
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <div class="form-group">
+                                    <div class="col">
+                                        <input type="text" id="InputName" name="name" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <div class="form-group">
+                                    <div class="col">
+                                        <input type="email" id="InputEmail" name="_replyto" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col align-self-center">
+                                <div class="form-group">
+                                    <div class="col">
+                                        <textarea class="form-control" rows="6" name="message" id="InputMessage" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col align-self-center text-right">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
