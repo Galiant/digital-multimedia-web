@@ -26,6 +26,30 @@ body {
   max-width: 960px;
 }
 
+@mixin transition($in) {
+  transition: $in;
+  -webkit-transition: $in;
+  -moz-transition: $in;
+  -o-transition: $in;
+  -ms-transition: $in;
+}
+
+@mixin transform($in) {
+  transform: $in;
+  -webkit-transform: $in;
+  -moz-transform: $in;
+  -o-transform: $in;
+  -ms-transform: $in;
+}
+
+@mixin animation($in) {
+  animation: $in;
+  -webkit-animation: $in;
+  -moz-animation: $in;
+  -o-animation: $in;
+  -ms-animation: $in;
+}
+
 /* Header */
 
 .bg-light {
@@ -61,6 +85,25 @@ body {
   }
   .btn-lg {
     padding: 1rem 1.5rem;
+  }
+}
+
+.animate {
+  @include transition(all 0.5s ease);
+  &:hover {
+    @include animation(shakeThatBooty 0.3s linear 1);
+  }
+}
+
+@keyframes shakeThatBooty {
+  33% {
+    @include transform(rotateZ(10deg));
+  }
+  67% {
+    @include transform(rotateZ(-10deg));
+  }
+  100% {
+    @include transform(rotateZ(10deg));
   }
 }
 
