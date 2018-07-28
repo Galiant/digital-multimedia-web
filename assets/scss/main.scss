@@ -7,7 +7,6 @@ $light-blue: rgb(130, 250, 247);
 $black: rgb(50, 51, 63);
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
 html {
   background: url(../img/Background.png) no-repeat center center fixed;
   background-size: cover;
@@ -62,6 +61,37 @@ body {
   }
   .btn-lg {
     padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 1499px) {
+  .my-header {
+    .display-4 {
+      font-size: 4rem;
+    }
+    .lead {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 1080px) {
+    .my-header {
+      .display-4 {
+        font-size: 3.5rem;
+      }
+      .lead {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  @media (max-width: 325px) {
+    .my-header {
+      .display-4 {
+        font-size: 2rem;
+      }
+      .lead {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 
