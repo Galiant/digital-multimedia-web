@@ -165,6 +165,34 @@ body {
   h3 {
     font-weight: 700;
   }
+  .social {
+    padding: 3rem 14rem;
+    a {
+      color: rgba($dark-green, .8);
+      &:hover {
+        color: $dark-green;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .my-contact .social {
+    padding: 3rem 4rem;
+  }
+  @media (max-width: 525px) {
+    .my-contact .social {
+      padding: 3rem 1rem;
+    }
+  }
+  @media (max-width: 425px) {
+    .my-contact .social {
+      padding: 3rem 0;
+      .fa-2x {
+        font-size: 1.5em;
+      }
+    }
+  }
 }
 
 form {
