@@ -178,7 +178,11 @@ body {
   text-align: center;
   padding-top: 0;
   padding-bottom: 6rem;
+  .about-logo {
+    margin-top: 0;
+  }
   p {
+    padding-top: 1rem;
     font-size: 26px;
   }
   img {
@@ -280,6 +284,12 @@ form {
 }
 
 /* Play */
+
+.instructions {
+  padding-top: 1.5rem;
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem;
+}
 
 .play-footer {
   background: url(../img/Dirt.png);
